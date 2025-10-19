@@ -6,13 +6,24 @@
   <title>Quick Bite | Calorie Visualizer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
+    ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  background: floralwhite;
+  border: 1px dashed orangered;
+  margin: 0.5rem 0;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
     body { font-family: 'Open Sans', sans-serif; background: maroon; color: dimgray; margin: 0; }
     header, footer { background: white; padding: 1rem 2rem; box-shadow: 0 2px 4px lightgray; }
     h1 { font-family: 'Poppins', sans-serif; color: maroon; }
     nav a { margin: 0 10px; text-decoration: none; color: black; font-weight: bold; }
     nav a:hover { color: maroon; }
     main { max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 5px gainsboro; }
-    .placeholder { background: floralwhite; border: 1px dashed maroon; padding: 1rem; border-radius: 8px; color: gray; }
+    .placeholder { background: floralwhite; border: 1px dashed maroon; padding: 1rem; border-radius: 8px; color: gray; 
   </style>
 </head>
 <body>
@@ -28,8 +39,22 @@
   </header>
 
   <main>
-    <h2>Calorie Visualizer</h2>
-    <div class="placeholder">WRITE CALORIE VISUALIZER HERE</div>
+  <h2>Calorie Visualizer</h2>
+    <p>Estimated or Average amount of calories in some everyday Food</p>
+  <div class="placeholder">
+    <h3>Average Calories in Common Foods</h3>
+    <ul>
+      <li> A slice of bread (average): <strong>80 calories</strong></li>
+      <li> 50 grams of white rice: <strong>65 calories</strong></li>
+      <li> 1 boiled egg: <strong>70 calories</strong></li>
+      <li> Basic omelette (2 eggs, butter, cheese): <strong>180 calories</strong></li>
+      <li> 1 bowl of porridge: <strong>150 calories</strong></li>
+      <li> A piece of salmon (100g): <strong>200 calories</strong></li>
+      <li> 1 standard pancake with syrup: <strong>250 calories</strong></li>
+    </ul>
+    <p style="color: dimgray; font-size: 0.9rem;">*Calories are approximate and can vary based on recipe and serving size.</p>
+  </div>
+
   </main>
 
   <footer>
