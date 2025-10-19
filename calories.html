@@ -6,58 +6,49 @@
   <title>Quick Bite | Calorie Visualizer</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
-    ul {
-  list-style-type: none;
-  padding: 0;
-}
-ul li {
-  background: floralwhite;
-  border: 1px dashed black;
-  margin: 0.5rem 0;
-  padding: 0.8rem;
-  border-radius: 8px;
-}
-    body { font-family: 'Open Sans', sans-serif; background: maroon; color: dimgray; margin: 0; }
+    body { font-family: 'Open Sans', sans-serif; background: maroon; color: black; margin: 0; }
     header, footer { background: white; padding: 1rem 2rem; box-shadow: 0 2px 4px lightgray; }
     h1 { font-family: 'Poppins', sans-serif; color: maroon; }
     nav a { margin: 0 10px; text-decoration: none; color: black; font-weight: bold; }
     nav a:hover { color: maroon; }
     main { max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 5px gainsboro; }
- .placeholder {
-  background: floralwhite;
-  border: 1px dashed maroon; /* original dotted border */
-  padding: 1rem;
-  border-radius: 8px;
-  color: black; /* make text black */
-}
-.placeholder img {
-  display: block;      /* puts image on its own line */
-  margin: 0.5rem 0;    /* spacing above and below the image */
-  max-width: 200px;    /* limit image size */
-  height: auto;        /* keep image proportions */
-}
 
-.food-card {
-  width: 180px;           /* square-ish box */
-  height: 220px;
-  background: white;
-  border: 2px solid black; /* solid black border */
-  border-radius: 10px;
-  text-align: center;
-  padding: 0.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-}
+    .placeholder {
+      background: floralwhite;
+      border: 1px dashed maroon;
+      padding: 1rem;
+      border-radius: 8px;
+      color: black;
+    }
 
-.food-card img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-}
+    .placeholder ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .placeholder li {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border: 1px dashed black;
+      padding: 0.8rem;
+      margin: 0.5rem 0;
+      border-radius: 8px;
+      background: white;
+    }
+
+    .placeholder li img {
+      max-width: 100px;
+      height: auto;
+      border-radius: 5px;
+      display: block;
+    }
+
+    .small-note {
+      color: dimgray;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -73,52 +64,43 @@ ul li {
   </header>
 
   <main>
-  <h2>Calorie Visualizer</h2>
+    <h2>Calorie Visualizer</h2>
     <p>Estimated or Average amount of calories in some everyday Food</p>
-  <div class="placeholder">
-    <h3>Average Calories in Common Foods</h3>
 
-    <div class="food-card">
-       <img src="bread.jpg" alt=bread "calories and nutrition" width="200">      
-      <p> A slice of bread (average)<br> <strong>60-80 calories</strong></p>
-     
-  <div class="food-card">
-    <img src="rice.jpg" alt="Rice">
-    <p>100 grams of white rice<br><strong>120-150 calories calories</strong></p>
-  </div>
-
-  <div class="food-card">
-    <img src="egg.jpg" alt="Boiled egg">
-    <p>🥚 1 fried egg<br><strong>70-100 calories</strong></p>
-  </div>
-
-  <div class="food-card">
-    <img src="omelettez.jpg" alt="Omelette">
-    <p>Basic omelette (2 eggs, butter, cheese)<br><strong>180-400 (depending on your ingredients and quantity) calories</strong></p>
-  </div>
-
-  <div class="food-card">
-    <img src="Oatmeal.jpg" alt="Oatmeal">
-    <p>1/2 cup of Oatmeal<br><strong>150-250 calories</strong></p>
-  </div>
-
-  <div class="food-card">
-    <img src="salmon.jpg" alt="Salmon">
-    <p>A fillet of salmon <br><strong>100-200 calories</strong></p>
-  </div>
-
-  <div class="food-card">
-    <img src="pancake.jpg" alt="Pancake">
-    <p>standard IHOP style pancake with syrup<br><strong>250+ calories</strong></p>
-  </div>
-
-  <p style="color: dimgray; font-size: 0.9rem;">*Calories are approximate and can vary based on recipe and serving size.</p>
-</div>
-   
-      
-    <p style="color: dimgray; font-size: 0.9rem;">*Calories are approximate and can vary based on recipe and serving size.</p>
-  </div>
-
+    <div class="placeholder">
+      <h3>Average Calories in Common Foods</h3>
+      <ul>
+        <li>
+          <img src="bread.jpg" alt="Bread">
+          A slice of bread (average) — <strong>60-80 calories</strong>
+        </li>
+        <li>
+          <img src="rice.jpg" alt="White Rice">
+          100 grams of white rice — <strong>120-150 calories</strong>
+        </li>
+        <li>
+          <img src="egg.jpg" alt="Boiled Egg">
+          1 boiled egg — <strong>70-100 calories</strong>
+        </li>
+        <li>
+          <img src="omelettez.jpg" alt="Omelette">
+          Basic omelette (2 eggs, butter, cheese) — <strong>180-400 calories</strong>
+        </li>
+        <li>
+          <img src="oatmeal.jpg" alt="Oatmeal">
+          1/2 cup of oatmeal — <strong>150-250 calories</strong>
+        </li>
+        <li>
+          <img src="salmon.jpg" alt="Salmon">
+          A fillet of salmon — <strong>100-200 calories</strong>
+        </li>
+        <li>
+          <img src="pancake.jpg" alt="Pancake">
+          Standard pancake with syrup — <strong>250+ calories</strong>
+        </li>
+      </ul>
+      <p class="small-note">*Calories are approximate and can vary based on recipe and serving size.</p>
+    </div>
   </main>
 
   <footer>
