@@ -23,15 +23,18 @@ ul li {
     nav a { margin: 0 10px; text-decoration: none; color: black; font-weight: bold; }
     nav a:hover { color: maroon; }
     main { max-width: 900px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 5px gainsboro; }
-  .placeholder {
-  display: flex;
-  flex-wrap: wrap;       
-  gap: 1rem;             
-  justify-content: center;
+ .placeholder {
+  background: floralwhite;
+  border: 1px dashed maroon; /* original dotted border */
   padding: 1rem;
-  border: 3px solid black; 
-  max width: 100%;
-  box -sizing: border-box
+  border-radius: 8px;
+  color: black; /* make text black */
+}
+.placeholder img {
+  display: block;      /* puts image on its own line */
+  margin: 0.5rem 0;    /* spacing above and below the image */
+  max-width: 200px;    /* limit image size */
+  height: auto;        /* keep image proportions */
 }
 
 .food-card {
